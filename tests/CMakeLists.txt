@@ -5,8 +5,7 @@ include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 # setup the test files
 SET(
         TEST_FILES
-        example_test_1.cpp
-        example_test_2.cpp)
+        test_memory.cpp cpu_basic_functions_test.cpp)
 
 
 # adding the Google_Tests_run target

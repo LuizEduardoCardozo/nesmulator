@@ -1,8 +1,14 @@
 #include <iostream>
 
-int
-main()
+#include "cpu.h"
+#include "memory.h"
+
+int main()
 {
-  std::cout << "Hello, World!" << std::endl;
-  return 0;
+  Memory *memory = new Memory();
+  Cpu *cpu = new Cpu(memory);
+
+  cpu->Reset();
+
+  cpu->Execute(9);
 }
